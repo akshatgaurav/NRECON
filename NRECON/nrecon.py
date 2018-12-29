@@ -108,7 +108,7 @@ try:
 		response_headers = u.info()
 		print green+"Http response header"+"\n"+white+str(response_headers)
 		
-		if 'x-frame-option' not in response_headers.keys():
+		if 'x-frame-options' not in response_headers.keys():
 			 print red+"Clickjacking protection is not in place"
 		print"-------------------"
 
